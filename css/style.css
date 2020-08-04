@@ -1,0 +1,123 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f60;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+}
+nav ul li {
+
+}
+
+nav ul li a {
+    text-decoration:  none;
+    padding: 5px;
+}
+
+nav:hover ul {
+
+}
+
+
+/* main */
+main {
+
+}
+/* section home */
+section:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #aaa;
+    text-align: center;
+    height: 70vh;
+}
+
+
+/* section actualites */
+section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #f605;
+}
+section:nth-child(2) h2 {
+    margin-bottom: 50px;
+    border-bottom: 5px solid #555;
+}
+
+section:nth-child(2) article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid #aaa;
+}
+
+section:nth-child(2) article img {
+    width: 100%;
+    max-height: 400px;
+}
+
+section:nth-child(2) article p {
+    text-align: center;
+    padding: 20px;
+}
+
+/* section agenda */
+
+
+/* section statistics */
+
+section:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #ef6;
+
+}
+
+section:nth-child(4) h2 {
+    border-bottom: 5px solid #555;
+    margin-bottom: 50px;
+}
+
+section:nth-child(4) article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #222;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #eee;
+
+}
+
+section:nth-child(4) article h4 {
+
+}
+
+section:nth-child(4) article p {
+
+}
+
+
+
+/*********** framework **********/
+section {
+    padding:  30px 20px;
+}
