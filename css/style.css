@@ -2,7 +2,8 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/* header */
+
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -10,114 +11,154 @@ header {
     background-color: #05c46b;
     height: 100%;
 }
-
 nav ul {
     list-style: none;
 }
 nav ul li {
 
 }
-
 nav ul li a {
     text-decoration:  none;
     padding: 5px;
 }
-
 nav:hover ul {
 
 }
 
-
-/* main */
+/* MAIN */
 main {
-
-}
-/* section home */
-section:nth-child(1) {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ACCUEIL */
+.accueil {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 480px;
     background-color: #eee;
     text-align: center;
     height: 70vh;
-    background-image: url('/img/heart-hands.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(80, 80, 80, 0.5), rgba(0, 0, 0, .8)), url('/img/heart-hands.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-clip: border-box;
 }
-section:nth-child(1) button {
+.accueil h2 {
+    color: #111;
+    font-size: 48px;
+}
+.accueil button {
     background-color: #05c46b;
-    border: none;
+    /* border: none; */
     color: #fff;
     padding: 15px 30px;
     border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 1px solid #fff;
+    font-size: 24px;
 }
 
-/* section actualites */
-section:nth-child(2) {
+/* ACTUALITES */
+.actualites {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     background-color: #fff;
 }
-section:nth-child(2) h2 {
+.actualites h2 {
     color: #05c46b;
     margin-bottom: 50px;
     padding-bottom: 20px;
     border-bottom: 5px solid #555;
 }
-
-section:nth-child(2) article {
+.actualites article {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 400px;
     margin: 20px 0;
     border: 1px solid #05c46b;
     background-color: #f9f9f9;
 }
-
-section:nth-child(2) article img {
+.actualites article img {
     width: 100%;
     height: 200px;
 }
-
-section:nth-child(2) article h3 {
+.actualites article h3 {
     text-align: center;
     padding: 20px;
     color: #05c46b;
 }
 
-/* section agenda */
+/* VOS AVIS */
+.vos-avis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vos-avis h2 {
+    color: #05c46b;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #555;
+}
+.vos-avis article {
+    display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 400px;
+}
+.vos-avis article img {
+    width: 50%;
+    max-width: 150px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+
+}
+.vos-avis article p {
+    padding: 0 20px;
+    text-align: center;
+}
+.vos-avis article p q {
+    font-style: italic;
+}
 
 
-/* section statistics */
 
-section:nth-child(4) {
+/* STATISTIQUES */
+
+.statistiques {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     background-color: #eee;
+    width: 100%;
+    max-width: 400px;
 
 }
-
-section:nth-child(4) h2 {
+.statistiques h2 {
     border-bottom: 5px solid #555;
     margin-bottom: 50px;
     padding-bottom: 20px;
     color: #05c46b;
 }
-
-section:nth-child(4) article {
+.statistiques article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 50%;
     border: 1px solid #222;
     width: 50%;
     margin: 10px;
@@ -125,12 +166,10 @@ section:nth-child(4) article {
     background-color: #eee;
 
 }
-
-section:nth-child(4) article h4 {
+.statistiques article h4 {
 
 }
-
-section:nth-child(4) article p {
+.statistiques article p {
 
 }
 
@@ -140,3 +179,8 @@ section:nth-child(4) article p {
 section {
     padding:  30px 20px;
 }
+
+
+
+
+
