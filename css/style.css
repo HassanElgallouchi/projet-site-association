@@ -7,7 +7,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f60;
+    background-color: #05c46b;
     height: 100%;
 }
 
@@ -38,11 +38,24 @@ section:nth-child(1) {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    background-color: #aaa;
+    background-color: #eee;
     text-align: center;
     height: 70vh;
+    background-image: url('/img/heart-hands.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
 }
-
+section:nth-child(1) button {
+    background-color: #05c46b;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
 
 /* section actualites */
 section:nth-child(2) {
@@ -50,10 +63,12 @@ section:nth-child(2) {
     flex-direction: column;
     align-items: center;
 
-    background-color: #f605;
+    background-color: #fff;
 }
 section:nth-child(2) h2 {
+    color: #05c46b;
     margin-bottom: 50px;
+    padding-bottom: 20px;
     border-bottom: 5px solid #555;
 }
 
@@ -62,17 +77,19 @@ section:nth-child(2) article {
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
-    border: 1px solid #aaa;
+    border: 1px solid #05c46b;
+    background-color: #f9f9f9;
 }
 
 section:nth-child(2) article img {
     width: 100%;
-    max-height: 400px;
+    height: 200px;
 }
 
-section:nth-child(2) article p {
+section:nth-child(2) article h3 {
     text-align: center;
     padding: 20px;
+    color: #05c46b;
 }
 
 /* section agenda */
@@ -85,13 +102,15 @@ section:nth-child(4) {
     flex-direction: column;
     align-items: center;
 
-    background-color: #ef6;
+    background-color: #eee;
 
 }
 
 section:nth-child(4) h2 {
     border-bottom: 5px solid #555;
     margin-bottom: 50px;
+    padding-bottom: 20px;
+    color: #05c46b;
 }
 
 section:nth-child(4) article {
