@@ -3,9 +3,7 @@ var menu = document.querySelector("header > div > i");
 
 var nav = document.querySelector("header > nav");
 
-// menu.addEventListener("click", function() {
-
-menu.onclick = function() {
+menu.addEventListener("click", function() {
 
   if (nav.style.display == "flex") {
 
@@ -21,4 +19,4 @@ menu.onclick = function() {
     menu.classList.remove("fa-bars");
   }
 
-};
+});
