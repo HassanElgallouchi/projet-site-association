@@ -1,0 +1,56 @@
+/*************** HEADER ***************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #05c46b;
+  position: relative;
+  height: 70px;
+  padding: 0 30px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+
+  display: none;
+}
+nav ul {
+  list-style: none;
+  background-color: #5ea;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  padding: 15px;
+}
+nav ul li:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+nav ul li:hover {
+  background-color: #05c46b;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* menu burger */
+header > div {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+}
+
+header > div > i {
+  color: #fff;
+  font-size: 32px;
+}
