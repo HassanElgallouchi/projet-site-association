@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/******************** MAIN ********************/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/******************** ACCUEIL ********************/
+.accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+    height: 70vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(80, 80, 80, 0.5), rgba(0, 0, 0, .8)), url('/img/heart-hands.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+}
+.accueil h2 {
+    color: #111;
+    font-size: 48px;
+}
+.accueil button {
+    background-color: #ffef00;
+    /* border: none; */
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 1px solid #fff;
+    font-size: 24px;
+}
+
+
+/******************** ACTUALITES ********************/
+.actualites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+.actualites h2 {
+    color: #05c46b;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #555;
+}
+.actualites article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    /* border: 1px solid #05c46b; */
+    box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+    background-color: #fff;
+}
+.actualites article img {
+    width: 100%;
+    height: 200px;
+}
+.actualites article h3 {
+    padding: 20px;
+    margin: 5px;
+    border-bottom: 1px solid #eee;
+}
+.actualites article h3 a {
+    text-align: center;
+    color: #05c46b;
+    text-decoration: none;
+}
+.actualites article p {
+    padding: 10px;
+}
+
+/******************** VOS AVIS ********************/
+.vos-avis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.vos-avis h2 {
+    color: #05c46b;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #555;
+}
+.vos-avis article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px #eee;
+}
+.vos-avis article img {
+    width: 50%;
+    max-width: 150px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+
+}
+.vos-avis article p {
+    padding: 0 20px;
+    text-align: center;
+}
+.vos-avis article p q {
+    font-style: italic;
+}
+
+
+
+/******************** STATISTIQUES ********************/
+
+.statistiques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    width: 100%;
+    background-color: #05c46b;
+
+}
+.statistiques h2 {
+    border-bottom: 5px solid #555;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.statistiques > div > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #eee5;
+    /*background-color: #eee; */
+
+}
+.statistiques > div > article > i{
+    font-size: 72px;
+    color: #fff;
+}
+.statistiques > div > article > h4 {
+    color: #fff;
+}
+
+
+
+/*********** framework **********/
+section {
+    padding:  10% 5%;
+    /* margin-bottom: 50px; */
+}
+
+
+
+
+

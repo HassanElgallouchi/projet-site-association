@@ -1,23 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Association Humanitaire</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/media-queries-index.css">
+    <title>Document</title>
+  </head>
+  <body>
     <header>
-        
+      <h1><i class="fas fa-people-carry"></i> béné<span>volat</span></h1>
+      <div>
+        <i class="fas fa-bars"></i>
+        <!-- <i class="fas fa-times"></i> -->
+      </div>
+      <nav>
+        <ul>
+          <li class="active-link"><a href="#accueil">Accueil</a></li>
+          <li><a href="#activites">Activités</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        
+      <section class="accueil">
+        <h2>Home</h2>
+        <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, debitis!</p> -->
+        <button>Je fais un don</button>
+      </section>
+      <section class="actualites">
+        <h2>Actualites</h2>
+        <div class="container">
+          <article>
+            <img src="img/1.jpg" alt="" />
+            <h3><a href="#">Lorem ipsum dolor sit amet, consectetur .</a></h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, debitis?
+            </p>
+          </article>
+          <article>
+            <img src="img/2.jpg" alt="" />
+            <h3><a href="#">Lorem ipsum dolor sit amet, </a></h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, debitis?
+            </p>
+          </article>
+          <article>
+            <img src="img/3.png" alt="" />
+            <h3><a href="#">Lorem ipsum dolor sit amet, </a></h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, debitis?
+            </p>
+          </article>
+          <article>
+            <img src="img/4.png" alt="" />
+            <h3><a href="#">Lorem  dolor sit ,  adipisicing elit.</a></h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, debitis?
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="vos-avis">
+        <h2>Vos avis</h2>
+        <div class="container">
+          <article>
+            <img src="./img/partenaire.png" alt="" />
+            <p>
+              <q>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio, mollitia.
+              </q>
+            </p>
+          </article>
+          <article>
+            <img src="./img/partenaire.png" alt="" />
+            <p>
+              <q>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio, mollitia.
+              </q>
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="statistiques">
+        <h2>statistiques</h2>
+        <div class="container">
+          <article>
+            <i class="fas fa-hamburger"></i>
+            <h4>1243 Repas</h4>
+          </article>
+          <article>
+            <i class="fas fa-users"></i>
+            <h4>564 Familles</h4>
+          </article>
+          <article>
+            <i class="fas fa-city"></i>
+            <h4>13 Villes</h4>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <footer>
+    <footer></footer>
 
-    </footer>
-</body>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
