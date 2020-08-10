@@ -1,64 +1,124 @@
+/* -------------------------------Mobile------------------------------- */
+/* @media screen and (max-width: 480px) { */
+
 /* GENERAL */
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.644);
+  background-color: rgba(97, 241, 186, 0.733);
 }
 
-/* SECTION */
+/* TITRE D'ACTIVITE */
 
-section {
-  width: auto;
+#titredeactivite {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 7px rgba(3, 1, 1, 0.829);
+  -webkit-text-fill-color: rgba(8, 87, 1, 0.808);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(26, 46, 25, 0.904);
+}
+
+/* SECTION ACTIVITE*/
+
+#activite {
+  margin-top: 0;
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ARTICLE */
 
 article {
-  margin: 5% 0;
-  width: 90%;
+  position: relative;
+  margin: 3% 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-content: center;
   text-align: center;
   color: white;
 }
-img {
+
+#date {
+  position: absolute;
+  top: -35px;
+  left: 40px;
+  background-color: red;
+  padding: 5px 10px;
+  border: 1px solid rgba(252, 232, 232, 0.534);
+  border-radius: 5px;
+  font-weight: 700;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#activite img {
   width: 100%;
-  border-color: rgb(0, 0, 0) solid 1px;
+  border: rgba(253, 253, 253, 0.589) solid 1px;
   border-radius: 5%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 10px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  transition: transform 0.2s;
-  -webkit-transition: transform 0.2s;
-  -moz-transition: transform 0.2s;
-  -ms-transition: transform 0.2s;
-  -o-transition: transform 0.2s;
-  -webkit-border-radius: 5%;
-  -moz-border-radius: 5%;
-  -ms-border-radius: 5%;
-  -o-border-radius: 5%;
 }
-/* 
-img:hover {
-  transform: scale(1.01);
-  -webkit-transform: scale(1.01);
-  -moz-transform: scale(1.01);
-  -ms-transform: scale(1.01);
-  -o-transform: scale(1.01);
-  opacity: 0.7;
-} */
 
-h2 {
-  margin-top: 25px;
+hr {
+  width: 310px;
+  color: rgba(175, 175, 180, 0.294);
+  margin-bottom: 40px;
+  margin-top: 30px;
 }
-p {
-  margin-top: 5px;
+article h3 {
+  position: absolute;
+  right: 10px;
+  bottom: 40px;
+  color: black;
+  font-size: 45px;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: rgb(219, 210, 255);
 }
+
+span {
+  font-size: 25px;
+  margin-top: 40px;
+  color: black;
+  font-size: 18px;
+}
+
+/* SECTION CHIFFRES CLES
+
+#chiffrescles {
+  display: flex;
+  flex-direction: column; 
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+#chiffrescles h2 {
+  
+  font-size: 20px;
+  */
 
 /* FOOTER */
 
@@ -70,6 +130,7 @@ footer {
   min-height: 180px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: inset 1px 1px 10px #0000009d;
 }
 .contacts {
   width: 100px;
@@ -111,5 +172,113 @@ div i a {
   background-color: black;
   color: blanchedalmond;
   font-size: 10px;
-  padding: 3px 0;
+  padding: 7px 0;
+}
+
+/* -------------------------------Tablette------------------------------- */
+
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  /* TITRE D'ACTIVITE */
+
+  #titredeactivite {
+    font-size: 50px;
+  }
+
+  /* SECTION ACTIVITE*/
+
+  #activite {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /* ARTICLE */
+
+  article {
+    width: 46%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #date {
+    top: -35px;
+    left: 40px;
+  }
+
+  #activite img {
+    height: 305px;
+  }
+
+  hr {
+    all: unset;
+  }
+
+  span {
+    font-size: 18px;
+  }
+}
+
+/* -------------------------------Ordinateur------------------------------- */
+@media screen and (min-width: 961px) {
+  /* TITRE D'ACTIVITE */
+
+  #titredeactivite {
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  /* SECTION ACTIVITE*/
+
+  #activite {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ARTICLE */
+
+  article {
+    margin-top: 0px;
+    width: 100%;
+    /* margin-right: auto;
+    margin-left: auto; */
+    display: flex;
+    flex-direction: row;
+  }
+
+  #date {
+    top: -15px;
+    left: 44px;
+    font-size: 20px;
+    padding: 6px 14px;
+  }
+
+  #activite img {
+    height: auto;
+    width: 600px;
+  }
+
+  hr {
+    all: unset;
+  }
+
+  #activite article div {
+    margin-top: 30px;
+  }
+
+  article h3 {
+    position: absolute;
+    left: 190px;
+    bottom: 10px;
+
+    font-size: 65px;
+  }
+
+  span {
+    font-size: 25px;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 200px;
+  }
 }
