@@ -18,25 +18,25 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     background-color: #eee;
     text-align: center;
     height: 70vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(80, 80, 80, 0.5), rgba(0, 0, 0, .8)), url('/img/heart-hands.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(80, 80, 80, 0.5), rgba(0, 0, 0, .8)), url('../img/heart-hands.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-clip: border-box;
 }
 .accueil h2 {
-    color: #111;
+    color: #fff;
     font-size: 48px;
+    text-shadow: 0 2px 5px #000;
 }
 .accueil button {
     background-color: #ffef00;
-    /* border: none; */
     color: #333;
     padding: 15px 30px;
     border-radius: 10px;
@@ -46,6 +46,7 @@ main {
     font-weight: bold;
     border: 1px solid #fff;
     font-size: 24px;
+    max-width: 290px;
 }
 
 
