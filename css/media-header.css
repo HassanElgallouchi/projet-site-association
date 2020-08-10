@@ -1,0 +1,92 @@
+/*********************** TABLETTE ***********************/
+
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  /* header */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header > div {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    position: initial;
+    width: auto;
+  }
+  header > nav > ul {
+    display: flex;
+    background-color: transparent;
+  }
+  header > nav > ul > li {
+    border: none !important;
+    padding: 10px;
+  }
+  header > nav > ul > li > a:hover {
+    color: #333;
+  }
+  .active-link {
+    background-color: #fff;
+    border-radius: 5px;
+    color: #333;
+  }
+  .active-link:hover {
+    background-color: #fff5;
+  }
+  .active-link a {
+    color: #333;
+  }
+  header > nav > ul > li > a{
+    color: #fff;
+  }
+  
+}
+
+/*********************** ORDINATEUR ***********************/
+
+@media screen and (min-width: 961px) {
+  /* header */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header > div {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    position: initial;
+    width: auto;
+  }
+  header > nav > ul {
+    display: flex;
+    background-color: transparent;
+  }
+  header > nav > ul > li {
+    border: none !important;
+    padding: 10px;
+  }
+
+  header > nav > ul > li > a:hover {
+    color: #333;
+  }
+  .active-link {
+    background-color: #fff;
+    border-radius: 5px;
+    color: #333;
+  }
+  .active-link:hover {
+    background-color: #fff5;
+  }
+  .active-link a {
+    color: #333;
+  }
+  header > nav > ul > li > a{
+    color: #fff;
+  }
+
+}
